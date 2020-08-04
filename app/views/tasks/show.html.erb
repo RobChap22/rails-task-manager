@@ -1,0 +1,8 @@
+<div class="container">
+  <h2><%= @task.title %></h2>
+  <p><%= @task.details %></p>
+  <h2><%= @task.completed? ? "[X]" : "[ ]" %></h2>
+  <%= link_to "Edit", edit_path  %>
+  <%= link_to "Delete", task_path(@task), method: :delete %>
+  <p><%= link_to "Back", tasks_path  %></p>
+</div>
